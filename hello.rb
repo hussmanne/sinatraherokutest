@@ -8,3 +8,9 @@ end
 get '/about' do
 	"This is an about page. Yeah, it's me"
 end
+
+get '/posts/:slug' do |slug|
+	"This is post number " + slug.to_s
+end
+
+

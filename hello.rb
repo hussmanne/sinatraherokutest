@@ -13,5 +13,5 @@ blog = [ 1, 2, 3 ]
 
 
 get '/posts/:slug' do |slug|
-	"This is post " + blog[slug].to_s
+	"This is post " + blog.to_s
 end

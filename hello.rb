@@ -9,11 +9,9 @@ get '/about' do
 	"This is an about page. Yeah, it's me"
 end
 
-blog = ["post 1", "post 2", "post 3"]
+blog = [ 1, 2, 3 ]
 
 
 get '/posts/:slug' do |slug|
-	"This is " + blog[slug].to_s
+	"This is post " + blog[slug].to_s
 end
-
-
